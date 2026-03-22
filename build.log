@@ -1,0 +1,32 @@
+
+> topgym@0.1.0 build
+> next build
+
+▲ Next.js 16.2.1 (Turbopack)
+
+  Creating an optimized production build ...
+
+> Build error occurred
+Error: Turbopack build failed with 1 errors:
+./src/app/globals.css:128:53
+Module not found: Can't resolve 'REMOVED_BASE64'
+  [90m126 |[0m ...[90m HERO ── */[0m
+  [90m127 |[0m ...-height:[35m100[0mvh;position:relative;display:flex;align-items:center;padding:clamp([35m80[0mpx,[35m12[0mv..[35m.[0m
+[31m[1m>[0m [90m128 |[0m ...position:absolute;inset:[35m0[0m;background-image:url([32m'REMOVED_BASE64'[0m);background-size:cover...
+  [90m    |[0m                                               [31m[1m^[0m
+  [90m129 |[0m ...s kenBurns{[35m0[0m%{transform:scale([35m1[0m);}[35m100[0m%{transform:scale([35m1.05[0m) translateX(-[35m0.5[0m%);}}
+  [90m130 |[0m ...rlay{position:absolute;inset:[35m0[0m;background:linear-gradient([35m90[0mdeg,rgba([35m10[0m,[35m10[0m,[35m10[0m,[35m0.93[0m) [35m40[0m...
+  [90m131 |[0m ...ent{position:absolute;left:[35m0[0m;top:[35m0[0m;bottom:[35m0[0m;width:[35m4[0mpx;background:[36mvar[0m(--red);}
+
+
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (./src/app/globals.css:128:53)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
