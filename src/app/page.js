@@ -7,6 +7,7 @@ import Gallery from "../components/Gallery";
 import Classes from "../components/Classes";
 import Schedule from "../components/Schedule";
 import Trainers from "../components/Trainers";
+import BmiCalculator from "../components/BmiCalculator";
 import Pricing from "../components/Pricing";
 import Contact from "../components/Contact";
 import MapSection from "../components/MapSection";
@@ -28,12 +29,12 @@ export default function Home() {
         const el = document.getElementById('scroll-line');
         if (el) el.style.width = `${pct*100}%`;
         
-        // Fluidly slide logo from 0px to 72px (8 intervals of 9px)
+        // Fluidly slide logo from 0px to 81px (9 intervals of 9px)
         const logoEl = document.getElementById('travelingLogo');
-        if (logoEl) logoEl.style.transform = `translateY(${pct * 72}px)`;
+        if (logoEl) logoEl.style.transform = `translateY(${pct * 81}px)`;
       }
       
-      const sections = ['home','about','gallery','classes','schedule','trainers','pricing','contact','location'];
+      const sections = ['home','about','gallery','classes','schedule','trainers','bmi','pricing','contact','location'];
       let current = '';
       sections.forEach(id => {
         const section = document.getElementById(id);
@@ -96,7 +97,7 @@ export default function Home() {
             className="si-traveling-logo" 
             alt="Logo" 
           />
-          {['home','about','gallery','classes','schedule','trainers','pricing','contact','location'].map(id => (
+          {['home','about','gallery','classes','schedule','trainers','bmi','pricing','contact','location'].map(id => (
             <div key={id} className={`si-dot ${activeId === id ? 'active' : ''}`} onClick={() => document.getElementById(id)?.scrollIntoView({behavior:'smooth'})}></div>
           ))}
         </div>
@@ -109,6 +110,7 @@ export default function Home() {
       <Classes />
       <Schedule />
       <Trainers />
+      <BmiCalculator />
       <Pricing />
       <Contact />
       <MapSection />
