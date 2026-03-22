@@ -25,11 +25,11 @@ Every word, image, phone number, and class schedule can be instantly updated by 
 
 | Hero Section | Interactive Classes |
 | :---: | :---: |
-| <img src="./public/images/screenshot-hero.png" width="400" alt="Hero Section" /> | <img src="./public/images/screenshot-classes.png" width="400" alt="Interactive Classes" /> |
+| <img src="./public/images/herosection.jpeg" width="400" alt="Hero Section" /> | <img src="./public/images/hiit.jpeg" width="400" alt="Interactive Classes" /> |
 
 | Pricing Tiers | Mobile Responsive Footer |
 | :---: | :---: |
-| <img src="./public/images/screenshot-pricing.png" width="400" alt="Pricing Tiers" /> | <img src="./public/images/screenshot-footer.png" width="400" alt="Mobile Footer" /> |
+| <img src="./public/images/about.jpg" width="400" alt="Features" /> | <img src="./public/images/logo.png" width="400" alt="Mobile Footer" /> |
 
 ## 💻 Tech Stack
 
