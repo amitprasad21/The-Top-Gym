@@ -146,7 +146,7 @@ export default function Trainers() {
             </div>
             <div className="modal-cta">
               <a href="#contact" className="btn-primary" onClick={closeModal}>Book a Session</a>
-              <a href="https://wa.me/919876543210" target="_blank" rel="noreferrer" className="btn-outline">WhatsApp</a>
+              <a href="https://wa.me/917029139659" target="_blank" rel="noreferrer" className="btn-outline">WhatsApp</a>
             </div>
           </div>
         </div>

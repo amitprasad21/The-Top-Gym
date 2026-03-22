@@ -36,7 +36,7 @@ export default function Contact() {
           <span className="section-tag">{contact.tag}</span>
           <h2>{contact.headingPlain} <em>{contact.headingEm}</em></h2>
           <div className="divider"></div>
-          <a href="https://wa.me/919876543210?text=Hi%2C%20I%20am%20interested%20in%20joining%20The%20Top%20Gym%20Greater%20Noida!" target="_blank" rel="noreferrer" className="whatsapp-btn">
+          <a href="https://wa.me/917029139659?text=Hi%2C%20I%20am%20interested%20in%20joining%20The%20Top%20Gym%20Greater%20Noida!" target="_blank" rel="noreferrer" className="whatsapp-btn">
             <span style={{ fontSize: '18px' }}>💬</span>
             Chat on WhatsApp
           </a>
