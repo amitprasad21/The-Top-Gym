@@ -65,7 +65,7 @@ export default function BmiCalculator() {
             Body Mass Index (BMI) is a simple calculation using a person&apos;s height and weight. The formula is BMI = kg/m². Let&apos;s see where you stand on your fitness journey.
           </p>
           
-          <div className="hours-grid" style={{ marginTop: "30px" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(130px, 1fr))", gap: "8px", marginTop: "30px", marginBottom: "clamp(20px, 4vw, 0)" }}>
             <div className="hour-item">
               <div className="hour-day">Below 18.5</div>
               <div className="hour-time" style={{ color: "#f59e0b" }}>Underweight</div>
@@ -101,7 +101,7 @@ export default function BmiCalculator() {
                 <input type="number" step="0.1" className="form-input" placeholder="e.g. 175" value={heightCm} onChange={(e) => setHeightCm(e.target.value)} required />
               </div>
             ) : (
-              <div className="form-row" style={{ marginBottom: "15px" }}>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "13px", marginBottom: "15px" }}>
                 <div className="form-group">
                   <label className="form-label">Height (feet)</label>
                   <input type="number" className="form-input" placeholder="e.g. 5" value={heightFt} onChange={(e) => setHeightFt(e.target.value)} required />
