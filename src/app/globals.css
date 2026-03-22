@@ -475,7 +475,9 @@ footer{background:var(--dark);border-top:1px solid rgba(232,28,36,0.25);padding:
   .nav-links,.nav-cta{display:none;}
   .hamburger{display:flex;}
   .mobile-menu{display:flex;}
-  .hero{padding:88px 4% 120px;}
+  .hero{padding:88px 4% 180px;} /* Increased bottom pad so stats don't overlap when wrapped */
+  .hero-stats{position:relative;background:var(--dark);flex-direction:column;}
+  .stat-box{border-right:none;border-bottom:1px solid rgba(255,255,255,0.03);padding:20px;}
   .classes-grid{grid-template-columns:1fr 1fr;}
   .pricing-grid{grid-template-columns:1fr;}
   .price-card.featured{order:-1;}
@@ -502,8 +504,11 @@ footer{background:var(--dark);border-top:1px solid rgba(232,28,36,0.25);padding:
   .footer-col:nth-child(1){grid-column:span 2;}
   .footer-col:nth-child(4){grid-column:span 2;margin-top:10px;}
   .footer-socials{gap:6px;}
-  .hero-stats{flex-wrap:wrap;}
-  .stat-box{flex:1 0 50%;border-right:none;border-bottom:1px solid rgba(255,255,255,0.03);}
+  .hero-stats{flex-direction:row;flex-wrap:wrap;}
+  .stat-box{flex:1 0 50%;border-right:1px solid rgba(255,255,255,0.03);border-bottom:1px solid rgba(255,255,255,0.03);padding:14px 10px;}
+  .stat-box:nth-child(even){border-right:none;}
+  .stat-box h3{font-size:26px;}
+  .stat-box p{font-size:10px;}
   .hours-grid{grid-template-columns:1fr;}
   .schedule-table th:nth-child(3),.schedule-table td:nth-child(3){display:none;}
 }
