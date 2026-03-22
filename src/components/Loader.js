@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 
 export default function Loader({ onComplete }) {
-  const [phrases] = useState(['Loading…', 'Warming up…', 'Almost there…', 'Ready to lift…']);
+  const [phrases] = useState(['WARMING UP THE IRON...', 'CALIBRATING MACHINES...', 'LOADING HEAVY WEIGHTS...', 'PREPARING FOR GLORY...']);
   const [phraseIdx, setPhraseIdx] = useState(0);
   const [progress, setProgress] = useState(0);
   const [opacity, setOpacity] = useState(1);
@@ -43,20 +43,29 @@ export default function Loader({ onComplete }) {
 
   return (
     <div id="loader" className={hidden ? "hidden" : ""}>
-      <div className="loader-logo-wrap">
+      <div className="loader-orbit-wrap">
+        <div className="orbit-ring orbit-ring-1"></div>
+        <div className="orbit-ring orbit-ring-2"></div>
+        <div className="orbit-ring orbit-ring-3">
+           <div className="orbit-planet"></div>
+        </div>
+        <div className="orbit-glow-dot"></div>
         <img className="loader-logo-img" src="/images/logo.png" alt="The Top Gym" />
       </div>
-      <div className="loader-name">THE TOP GYM</div>
-      <div className="loader-sub">Greater Noida · No Pain No Gain</div>
+
+      <div className="loader-name">
+        <span className="c-white">THE</span> <span className="c-red">TOP</span> <span className="c-yellow">GYM</span>
+      </div>
+      
+      <div className="loader-sub">GREATER NOIDA · NO PAIN NO GAIN</div>
+      
       <div className="loader-bar-wrap">
+        <div className="loader-bar-bg"></div>
         <div className="loader-bar-fill" style={{ width: `${progress}%` }}></div>
       </div>
-      <div className="loader-pct">{Math.floor(progress)}%</div>
+      
+      <div className="loader-pct">{Math.floor(progress)} <span className="pct-sign">%</span></div>
       <div className="loader-phrase" style={{ opacity }}>{phrases[phraseIdx]}</div>
-      <div className={`loader-scroll ${showScroll ? "vis" : ""}`} id="loaderScroll">
-        <div className="sw"><div className="sw-dot"></div></div>
-        <div className="sw-label">Scroll</div>
-      </div>
     </div>
   );
 }

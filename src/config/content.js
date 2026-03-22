@@ -13,9 +13,9 @@ export const siteContent = {
   },
   hero: {
     tag: "Greater Noida's Premier Fitness Centre",
-    headingLine1: 'NO',
-    headingEm: 'PAIN',
-    headingLine2: 'NO GAIN',
+    headingLine1: 'TRAIN ',
+    headingEm: 'INSANE',
+    headingLine2: 'OR REMAIN THE SAME',
     sub: 'State-of-the-art equipment, certified trainers, and a culture that transforms beginners into champions — every single day.',
     stats: [
       { target: 500, label: 'Active Members' },
