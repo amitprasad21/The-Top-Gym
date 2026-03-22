@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "The Top Gym – No Pain No Gain | Greater Noida",
+  title: "The Top Gym",
   description: "Greater Noida's Premier Fitness Centre",
   icons: {
     icon: '/images/logo.png',
